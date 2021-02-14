@@ -1,0 +1,88 @@
+
+body{
+    background-color: black;
+}
+.grid-container{
+    display : grid;
+    grid-template-columns: auto 905px auto;
+    column-gap: 10px;
+    grid-template-rows: 565px 198px;
+    row-gap: 10px;
+    border : 1px solid white;
+    
+}
+
+.leftSide{
+    grid-column-start: 1;
+    grid-row-start: 2 span;
+    grid-row-end: 3;
+    border : 1px solid white;
+}
+
+.logo{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border : 1px solid white;
+    background-image: url(PNG/Beatmaker\ fond\ +\ typo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;  
+}
+.keybord{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border : 1px solid white;
+}
+.flex-container{
+    display :inline-flex;
+    
+}
+.colFlex{
+    width: 77px;
+    margin-right: 35px;
+    background-color: tomato;
+    
+}
+.key{
+    border-radius: 50%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 77px;
+    height: 77px;
+    padding: 5px;
+    
+    
+}
+kbd {
+    display:block;
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+}
+span{
+    display: block;
+    color: white;
+    font-size: 15px;
+   margin-left: 20px;
+   margin-top: -30px;
+    
+}
+#S, #L{
+    margin-top: 38px;
+}
+#D, #K{
+    margin-top: 76px;
+}
+#F, #J{
+    margin-top: 114px;
+}
+
+
+.rightSide{
+    grid-column-start: 3;
+    grid-row-start: 2 span;
+    grid-row-end: 3;
+    border : 1px solid white;
+}
