@@ -1,6 +1,7 @@
 
 body{
     background-color: black;
+    
 }
 .grid-container{
     display : grid;
@@ -8,7 +9,7 @@ body{
     column-gap: 10px;
     grid-template-rows: 565px 198px;
     row-gap: 10px;
-    border : 1px solid white;
+    
     
 }
 
@@ -16,14 +17,37 @@ body{
     grid-column-start: 1;
     grid-row-start: 2 span;
     grid-row-end: 3;
-    border : 1px solid white;
+    
+}
+#hand{
+    position: absolute;
+    margin-top: 93px;
+    margin-left: 220px;
+    z-index: 1;
+    visibility: visible;
+}
+#skulls{
+    
+    margin-top: 225px;
+    margin-left: 86px;
+    visibility: visible;
+}
+#anchor{
+    margin-left: 117px;
+    margin-top: -45px;
+    visibility: visible;
+}
+#bones{
+    margin-left: 159px;
+    margin-top: -35px;
+    visibility: visible;
 }
 
 .logo{
     grid-row-start: 1;
     grid-column-start: 2;
     grid-column-end: 2;
-    border : 1px solid white;
+   
     background-image: url(PNG/Beatmaker\ fond\ +\ typo.png);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -33,7 +57,7 @@ body{
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 2;
-    border : 1px solid white;
+    
 }
 .flex-container{
     display :inline-flex;
@@ -42,7 +66,7 @@ body{
 .colFlex{
     width: 77px;
     margin-right: 35px;
-    background-color: tomato;
+    
     
 }
 .key{
@@ -52,25 +76,26 @@ body{
     width: 77px;
     height: 77px;
     padding: 5px;
-    
-    
 }
+
 kbd {
     display:block;
     color: white;
     font-size: 50px;
-    margin-left: 20px;
+    margin-left: 17px;
+    margin-top: -5px;
 }
 span{
     display: block;
     color: white;
     font-size: 15px;
    margin-left: 20px;
-   margin-top: -30px;
+   margin-top: -25px;
     
 }
 #S, #L{
     margin-top: 38px;
+    
 }
 #D, #K{
     margin-top: 76px;
@@ -84,5 +109,55 @@ span{
     grid-column-start: 3;
     grid-row-start: 2 span;
     grid-row-end: 3;
-    border : 1px solid white;
+    
+}
+#star{
+    position: absolute;
+    z-index: 1;
+    margin-right: 162px;
+    margin-top: 39px;
+    visibility: visible;
+    
+}
+#mermaid{
+    margin-top: 173px;
+    margin-left: 135px;
+    visibility: visible;
+}
+#knife{
+    margin-left: -15px;
+    margin-top: -100px;
+    visibility: visible;
+}
+#bird{
+    margin-left: 45px;
+    margin-top: -65px;
+    visibility: visible;
+    
+}
+/*HOOVER SOURIS*/
+#Q:hover,#M:hover{
+    box-shadow:  0px 0px 12px  #00FF40;
+    transform :scale(1.1);
+}
+#S:hover, #L:hover{
+    box-shadow:  0px 0px 12px  #e43804;
+    transform :scale(1.1);
+}
+#D:hover, #K:hover{
+    box-shadow:  0px 0px 12px  #FFF82A;
+    transform :scale(1.1);
+}
+#F:hover, #J:hover{
+    box-shadow:  0px 0px 12px  #f058ac;
+    transform :scale(1.1);
+}
+.key:hover{
+    border: none;
+}
+
+/*  AJOUT STYLE VIA JS*/
+.playing{
+    transform :scale(1.1);
+    box-shadow:  0px 0px 12px  white;
 }

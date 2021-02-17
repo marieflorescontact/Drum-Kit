@@ -10,11 +10,16 @@
 </head>
 <body>
   <div class="grid-container">
-    <div class="leftSide"></div>
+    <div class="leftSide">
+      <img id="hand" src="PNG/Beatmaker main.png" alt="picto main" >
+      <img id="skulls" src="PNG/Beatmaker tete de mort.png" alt="picto tete de mort">
+      <img id="anchor" src="PNG/Beatmaker ancre.png" alt="picto ancre marine">
+      <img id="bones" src="PNG/Beatmaker os.png" alt="picto os qui se croisent">
+    </div>
     <div class="logo"></div>
     <div class="keybord flex-container">
-      <div class="colFlex" data-key="81">
-        <div class="key">
+      <div class="colFlex">
+        <div class="key" data-key="81" id="Q">
           <kbd>Q</kbd><br><span class="sound">clap</span>
         </div>
       </div>
@@ -27,7 +32,7 @@
         <kbd>D</kbd><br><span class="sound">clap</span>
       </div></div>
       <div class="colFlex" >
-        <div class="key" data-key="70" id="F">
+        <div class="key" data-key="70" id="F" >
         <kbd>F</kbd><br><span class="sound">clap</span>
       </div></div>
       <div class="colFlex">
@@ -43,12 +48,49 @@
         <kbd>L</kbd><br><span class="sound">clap</span>
       </div></div>
       <div class="colFlex">
-        <div class="key" data-key="76" id="M">
+        <div class="key" data-key="77" id="M">
         <kbd>M</kbd><br><span class="sound">clap</span>
       </div></div>
     </div>
-    <div class="rightSide">C</div>
+    <div class="rightSide">
+      <img id="star" src="PNG/Beatmaker etoile.png" alt="picto etoile">
+      <img id="mermaid" src="PNG/Beatmaker sirene.png" alt="picto sirene">
+      <img id="knife" src="PNG/Beatmaker dague.png" alt="picto dague">
+      <img id="bird" src="PNG/Beatmaker hirondelle.png" alt="picto hirondelle">
+    </div>
   </div>
+  <audio data-key="81" src="sounds/MUSCPerc_Charleston 1 (ID 2295)_LS.wav"></audio>
+  <audio data-key="83" src="sounds/MUSCPerc_Caisse claire 1 (ID 2304)_LS.wav"></audio>
+  <audio data-key="68" src="sounds/MUSCPerc_Tom aigu 1 (ID 2329)_LS.wav"></audio>
+  <audio data-key="70" src="sounds/MUSCPerc_Tom medium 1 (ID 2333)_LS.mp3"></audio>
+  <audio data-key="74" src="sounds/MUSCPerc_Tom grave 4 (ID 2341)_LS.wav"></audio>
+  <audio data-key="75" src="sounds/MUSCPerc_Tom medium 5 (ID 2337)_LS.wav"></audio>
+  <audio data-key="76" src="sounds/MUSCPerc_Cymbale ride 51cm 4 (ID 2326)_LS.wav"></audio>
+  <audio data-key="77" src="sounds/MUSCPerc_Cymbale 8 3 (ID 2322)_LS.wav"></audio>
   
+  <script>
+
+    //chaque touche est un objet avec 1 son, 1 key code, 1 illustration
+    // let key ={data-key: 10, sound: .wave, drawing: .png, id:"id"}
+    //let key = document.getElementById("F");
+    //let key = e.keyCode;
+    window.addEventListener("keydown", function(e){
+      const keyPressed = e.keyCode;
+      const audio = document.querySelector(`audio[data-key='${keyPressed}']`);
+      const key = document.querySelector(`.key[data-key="${keyPressed}"]`)
+      if (!audio) return; //ne joue pas si il n'y pas de son
+      audio.currentTime= 0; //remet le son au debut
+      audio.play();
+      key.classList.add('playing');
+
+    });
+
+   
+      // if(e.key code == e.charAt[o]){
+      //   play sound
+      //   document.querySelector("kbd").style.border = "10px solid red";
+      // }
+    
+  </script>
 </body>
 </html>
