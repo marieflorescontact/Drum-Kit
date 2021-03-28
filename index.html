@@ -1,94 +1,125 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DRUM_KIT</title>
-  <link rel="stylesheet" href="style.css" >
-</head>
-<body>
-  <div class="grid-container">
-    <div class="leftSide">
-      <img id="hand" src="PNG/Beatmaker main.png" alt="picto main" data-key="81">
-      <img id="skulls" src="PNG/Beatmaker tete de mort.png" alt="picto tete de mort">
-      <img id="anchor" src="PNG/Beatmaker ancre.png" alt="picto ancre marine">
-      <img id="bones" src="PNG/Beatmaker os.png" alt="picto os qui se croisent">
-    </div>
-    <div class="logo"></div>
-    <div class="keybord flex-container">
-      <div class="colFlex">
-        <div class="key" data-key="81" id="Q">
-          <kbd>Q</kbd><br><span class="sound">clap</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRUM_KIT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="leftSide">
+        <img
+          id="hand"
+          src="PNG/Beatmaker main.png"
+          alt="picto main"
+          data-key="81"
+        />
+        <img
+          id="skulls"
+          src="PNG/Beatmaker tete de mort.png"
+          alt="picto tete de mort"
+        />
+        <img
+          id="anchor"
+          src="PNG/Beatmaker ancre.png"
+          alt="picto ancre marine"
+        />
+        <img
+          id="bones"
+          src="PNG/Beatmaker os.png"
+          alt="picto os qui se croisent"
+        />
+      </div>
+      <div class="logo"></div>
+      <div class="keybord flex-container">
+        <div class="colFlex">
+          <div class="key" data-key="81" id="Q">
+            <kbd>Q</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="83" id="S">
+            <kbd>S</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="68" id="D">
+            <kbd>D</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="70" id="F">
+            <kbd>F</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="74" id="J">
+            <kbd>J</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="75" id="K">
+            <kbd>K</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="76" id="L">
+            <kbd>L</kbd><br /><span class="sound">clap</span>
+          </div>
+        </div>
+        <div class="colFlex">
+          <div class="key" data-key="77" id="M">
+            <kbd>M</kbd><br /><span class="sound">clap</span>
+          </div>
         </div>
       </div>
-      <div class="colFlex" >
-        <div class="key" data-key="83" id="S">
-        <kbd>S</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex" >
-        <div class="key" data-key="68" id="D">
-        <kbd>D</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex" >
-        <div class="key" data-key="70" id="F" >
-        <kbd>F</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex">
-        <div class="key" data-key="74" id="J">
-        <kbd>J</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex">
-        <div class="key" data-key="75" id="K">
-        <kbd>K</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex">
-        <div class="key" data-key="76" id="L">
-        <kbd>L</kbd><br><span class="sound">clap</span>
-      </div></div>
-      <div class="colFlex">
-        <div class="key" data-key="77" id="M">
-        <kbd>M</kbd><br><span class="sound">clap</span>
-      </div></div>
+      <div class="rightSide">
+        <img id="star" src="PNG/Beatmaker etoile.png" alt="picto etoile" />
+        <img id="mermaid" src="PNG/Beatmaker sirene.png" alt="picto sirene" />
+        <img id="knife" src="PNG/Beatmaker dague.png" alt="picto dague" />
+        <img
+          id="bird"
+          src="PNG/Beatmaker hirondelle.png"
+          alt="picto hirondelle"
+        />
+      </div>
     </div>
-    <div class="rightSide">
-      <img id="star" src="PNG/Beatmaker etoile.png" alt="picto etoile">
-      <img id="mermaid" src="PNG/Beatmaker sirene.png" alt="picto sirene">
-      <img id="knife" src="PNG/Beatmaker dague.png" alt="picto dague">
-      <img id="bird" src="PNG/Beatmaker hirondelle.png" alt="picto hirondelle">
-    </div>
-  </div>
-  <audio data-key="81" src="sounds/MUSCPerc_Charleston 1 (ID 2295)_LS.wav"></audio>
-  <audio data-key="83" src="sounds/MUSCPerc_Caisse claire 1 (ID 2304)_LS.wav"></audio>
-  <audio data-key="68" src="sounds/MUSCPerc_Tom aigu 1 (ID 2329)_LS.wav"></audio>
-  <audio data-key="70" src="sounds/MUSCPerc_Tom medium 1 (ID 2333)_LS.mp3"></audio>
-  <audio data-key="74" src="sounds/MUSCPerc_Tom grave 4 (ID 2341)_LS.wav"></audio>
-  <audio data-key="75" src="sounds/MUSCPerc_Tom medium 5 (ID 2337)_LS.wav"></audio>
-  <audio data-key="76" src="sounds/MUSCPerc_Cymbale ride 51cm 4 (ID 2326)_LS.wav"></audio>
-  <audio data-key="77" src="sounds/MUSCPerc_Cymbale 8 3 (ID 2322)_LS.wav"></audio>
-  
-  <script>
-    function playSound(e){
-      const keyPressed = e.keyCode;
-      const audio = document.querySelector(`audio[data-key='${keyPressed}']`);
-      const key = document.querySelector(`.key[data-key="${keyPressed}"]`);
-      const image = document.querySelector(`img[data-key='${keyPressed}']`);
-      if (!audio) return; //ne joue pas si il n'y pas de son
-      audio.currentTime= 0; //remet le son au debut
-      audio.play();
-      key.classList.add('playing');
-      image.style.visibility("visible");
-    }
-    //partie faite sans trop comprendre:
-    function removeTransition(e){
-      if(e.propertyName !== 'transform') return
-      this.classList.remove('playing');
-    }
-    window.addEventListener("keydown", playSound);
-    const keys = document.querySelectorAll('.key');
-    keys.forEach(key => key.addEventListener('transitionend',removeTransition));
-    
-  </script>
-</body>
+    <audio
+      data-key="81"
+      src="sounds/MUSCPerc_Charleston 1 (ID 2295)_LS.wav"
+    ></audio>
+    <audio
+      data-key="83"
+      src="sounds/MUSCPerc_Caisse claire 1 (ID 2304)_LS.wav"
+    ></audio>
+    <audio
+      data-key="68"
+      src="sounds/MUSCPerc_Tom aigu 1 (ID 2329)_LS.wav"
+    ></audio>
+    <audio
+      data-key="70"
+      src="sounds/MUSCPerc_Tom medium 1 (ID 2333)_LS.mp3"
+    ></audio>
+    <audio
+      data-key="74"
+      src="sounds/MUSCPerc_Tom grave 4 (ID 2341)_LS.wav"
+    ></audio>
+    <audio
+      data-key="75"
+      src="sounds/MUSCPerc_Tom medium 5 (ID 2337)_LS.wav"
+    ></audio>
+    <audio
+      data-key="76"
+      src="sounds/MUSCPerc_Cymbale ride 51cm 4 (ID 2326)_LS.wav"
+    ></audio>
+    <audio
+      data-key="77"
+      src="sounds/MUSCPerc_Cymbale 8 3 (ID 2322)_LS.wav"
+    ></audio>
+
+    <script src="Script.js"></script>
+  </body>
 </html>
