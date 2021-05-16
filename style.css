@@ -3,7 +3,7 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto 55vw auto;
+  grid-template-columns: auto auto auto;
   column-gap: 1vw;
   grid-template-rows: 62.22vh 21.08vh;
   row-gap: 1vh;
@@ -16,6 +16,7 @@ body {
 }
 .imgleft {
   content: url(PNG/gauche_1200.png);
+  margin-top: 3rem;
 }
 
 .logo {
@@ -27,6 +28,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
+  background-size: 65vh;
 }
 .keybord {
   grid-row-start: 2;
@@ -86,6 +88,7 @@ span {
 }
 #imgright {
   content: url(PNG/droite_1200.png);
+  margin-top: 3rem;
 }
 
 /*HOOVER SOURIS*/
@@ -121,6 +124,63 @@ span {
   transform: scale(1.1);
   box-shadow: 0px 0px 12px white;
 }
+@media screen and (max-width: 1200px) {
+  .imgleft {
+    content: url(PNG/gauche_1200.png);
+    width: 15rem;
+    margin-top: 5rem;
+  }
+  .logo {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+    background-image: url(PNG/Beatmaker\ fond\ +\ typo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 60vh;
+  }
+  .keybord {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+  .colFlex {
+    width: 3.6rem;
+    margin-right: 2.188rem;
+  }
+  .key {
+    border-radius: 50%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    width: 4.813rem;
+    height: 4.813rem;
+    padding: 0.313rem;
+    transition: all 0.07s;
+  }
+
+  kbd {
+    display: block;
+    color: white;
+    font-size: 3.125rem;
+    margin-left: 1.063rem;
+    margin-top: -0.313rem;
+  }
+  span {
+    display: block;
+    display: block;
+    color: white;
+    font-size: 15px;
+    margin-left: 18px;
+    margin-top: -25px;
+  }
+  #imgright {
+    content: url(PNG/droite_1200.png);
+    width: 15rem;
+    margin-top: 5rem;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .grid-container {
@@ -131,23 +191,38 @@ span {
       "content"
       "nav"
       "sidebar";
-    grid-template-rows: 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 0.2fr 1fr;
     row-gap: 1vh;
   }
   .leftSide {
     grid-area: header;
   }
   .imgleft {
-    content: url(PNG/haut_800.png);
+    float: right;
+    margin-left: 6rem;
+    margin-top: 0rem;
+    width: 8rem;
+    content: url(PNG/Beatmaker\ main.png);
   }
 
   .logo {
     grid-area: content;
     margin-left: 1.5rem;
-    background-size: 50vh;
+    background-size: 35vh;
+    background-position-x: center;
+    background-position-y: top;
+    margin-top: -9rem;
+    z-index: -1;
+  }
+  #imageisolee {
+    width: 8rem;
+    content: url(PNG/Beatmaker\ etoile.png);
+    position: absolute;
+    margin-top: 11rem;
   }
   .keybord {
     grid-area: nav;
+    margin-top: -8rem;
     justify-content: center;
     align-content: center;
   }
@@ -156,6 +231,9 @@ span {
   }
   #imgright {
     content: url(PNG/bas_800.png);
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
   }
 
   .flex-container {
