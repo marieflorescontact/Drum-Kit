@@ -14,27 +14,8 @@ body {
   grid-row-start: 2 span;
   grid-row-end: 3;
 }
-#hand {
-  position: absolute;
-  margin-top: 5.813rem;
-  margin-left: 13.75rem;
-  z-index: 1;
-  visibility: visible;
-}
-#skulls {
-  margin-top: 14.063rem;
-  margin-left: 5.375rem;
-  visibility: visible;
-}
-#anchor {
-  margin-left: 7.313rem;
-  margin-top: -2.813rem;
-  visibility: visible;
-}
-#bones {
-  margin-left: 9.938rem;
-  margin-top: -2.188rem;
-  visibility: visible;
+.imgleft {
+  content: url(PNG/gauche_1200.png);
 }
 
 .logo {
@@ -103,28 +84,10 @@ span {
   grid-row-start: 2 span;
   grid-row-end: 3;
 }
-#star {
-  position: absolute;
-  z-index: 1;
-  margin-right: 110.125rem;
-  margin-top: 2.438rem;
-  visibility: visible;
+#imgright {
+  content: url(PNG/droite_1200.png);
 }
-#mermaid {
-  margin-top: 10.813rem;
-  margin-left: 8.438rem;
-  visibility: visible;
-}
-#knife {
-  margin-left: -0.938rem;
-  margin-top: -6.25rem;
-  visibility: visible;
-}
-#bird {
-  margin-left: 2.813rem;
-  margin-top: -4.063rem;
-  visibility: visible;
-}
+
 /*HOOVER SOURIS*/
 .keybord:hover {
   cursor: url(PNG/cursor_hand_white.png), auto;
@@ -159,50 +122,6 @@ span {
   box-shadow: 0px 0px 12px white;
 }
 
-@media screen and (max-width: 1200px) {
-  .logo {
-    margin-left: -5rem;
-    z-index: -1;
-  }
-  .leftSide {
-    margin-left: -15rem;
-    margin-top: -5rem;
-  }
-  .keybord {
-    margin-left: -5rem;
-  }
-  .rightSide {
-    margin-right: -20rem;
-    margin-top: -5rem;
-  }
-  #star {
-    position: absolute;
-    z-index: 1;
-    margin-right: 110.125rem;
-    margin-top: 2.438rem;
-    visibility: visible;
-  }
-  #mermaid {
-    margin-top: 10rem;
-    margin-left: 0rem;
-    visibility: visible;
-  }
-  #knife {
-    margin-left: -10rem;
-    margin-top: 10rem;
-    visibility: visible;
-  }
-  #bird {
-    margin-left: -10rem;
-    margin-top: -10rem;
-    visibility: visible;
-  }
-
-  .colFlex {
-    width: 3.8rem;
-    margin-right: 1.5rem;
-  }
-}
 @media screen and (max-width: 800px) {
   .grid-container {
     display: grid;
@@ -218,6 +137,9 @@ span {
   .leftSide {
     grid-area: header;
   }
+  .imgleft {
+    content: url(PNG/haut_800.png);
+  }
 
   .logo {
     grid-area: content;
@@ -231,6 +153,9 @@ span {
   }
   .rightSide {
     grid-area: sidebar;
+  }
+  #imgright {
+    content: url(PNG/bas_800.png);
   }
 
   .flex-container {
@@ -272,50 +197,5 @@ span {
     grid-area: sidebar;
     margin-top: 50%;
     margin-left: 50%;
-  }
-  #hand {
-    margin-top: 20rem;
-    margin-left: 42rem;
-    z-index: 1;
-    visibility: visible;
-  }
-  #skulls {
-    position: absolute;
-    margin-top: 0rem;
-    margin-left: 10rem;
-    visibility: visible;
-  }
-  #anchor {
-    margin-left: 20rem;
-    margin-top: 10rem;
-    visibility: visible;
-  }
-  #bones {
-    margin-left: -3rem;
-    margin-top: 2rem;
-    visibility: visible;
-    z-index: 1;
-  }
-  #star {
-    position: absolute;
-    z-index: 1;
-    margin-right: 110.125rem;
-    margin-top: -17rem;
-    visibility: visible;
-  }
-  #mermaid {
-    margin-top: 10rem;
-    margin-left: 20rem;
-    visibility: visible;
-  }
-  #knife {
-    margin-left: -30rem;
-    margin-top: 0rem;
-    visibility: visible;
-  }
-  #bird {
-    margin-left: 17rem;
-    margin-top: -5rem;
-    visibility: visible;
   }
 }

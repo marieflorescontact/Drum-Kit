@@ -1,5 +1,5 @@
-function playSound(keyPressEvent) {
-  const keyPressed = keyPressEvent.keyCode;
+function playSound(e) {
+  const keyPressed = e.keyCode;
   const audio = document.querySelector(`audio[data-key='${keyPressed}']`);
   const key = document.querySelector(`.key[data-key="${keyPressed}"]`);
   const image = document.querySelector(`img[data-key='${keyPressed}']`);
@@ -9,7 +9,7 @@ function playSound(keyPressEvent) {
   key.classList.add("playing");
   image.style.visibility("visible");
 }
-
+//partie faite sans trop comprendre:
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
   this.classList.remove("playing");
